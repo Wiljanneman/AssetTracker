@@ -20,8 +20,7 @@ export class HomeComponent {
   private initMap(): void {
     this.map = L.map('map', {
       crs: L.CRS.Simple,
-      minZoom: -1,
-      maxZoom: 4,
+      zoom: 7,
       zoomControl: false,
       scrollWheelZoom: false,
       doubleClickZoom: false,
@@ -65,7 +64,10 @@ export class HomeComponent {
     return L.divIcon({
       className: 'desk-icon',
       iconSize: [50, 50],
-      html: `<img src="assets/images/4seat.PNG" style="width: 50px; height: 50px; border: 2px ${borderStyle} black;" />`
+      html: `<img src="assets/images/4seat.PNG" style="width: 50px; height: 50px; border: 2px ${borderStyle} black;">
+          <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">20</div>
+          <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -start-2 dark:border-gray-900">20</div>
+      </img>`
     });
   }
 

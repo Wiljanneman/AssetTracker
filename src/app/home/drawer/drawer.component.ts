@@ -11,6 +11,10 @@ export class DrawerComponent implements OnInit {
   employees: any[] = [];
   drawer: Drawer;
 
+  constructor(_http: Http) {
+
+  }
+
   ngOnInit() {
     let drawer = document.getElementById('drawer-left');
 
@@ -23,6 +27,10 @@ export class DrawerComponent implements OnInit {
     });
     this.drawer.show();
     this.employees = this.getEmployees();
+
+    this.employees.forEach(e => {
+      e.avatar = 
+    })
   }
 
   getEmployees() {
