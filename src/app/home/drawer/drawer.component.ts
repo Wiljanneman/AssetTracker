@@ -11,7 +11,7 @@ export class DrawerComponent implements OnInit {
   employees: any[] = [];
   drawer: Drawer;
 
-  constructor(_http: Http) {
+  constructor() {
 
   }
 
