@@ -28,9 +28,9 @@ export class DrawerComponent implements OnInit {
     this.drawer.show();
     this.employees = this.getEmployees();
 
-    this.employees.forEach(e => {
-      e.avatar = 
-    })
+    // this.employees.forEach(e => {
+    //   e.avatar = 
+    // })
   }
 
   getEmployees() {
